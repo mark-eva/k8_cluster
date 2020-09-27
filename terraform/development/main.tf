@@ -8,45 +8,57 @@ locals {
 
 #create VPC
 
-module "poc_vpc" {
-  source     = "../../modules/vpc"
+module "dev_vpc" {
+  source     = "../modules/vpc"
   cidr_block = local.cidr_block
 }
 
 
 #Create Security Group
-module "poc_sec_group" {
-  source           = "../../modules/sec_group"
-  sec_group_name   = "my_security_group"
-  sec_group_vpc_id = module.poc_vpc.vpc_id
+module "dev_sec_group" {
+  source           = "../modules/sec_group"
+  sec_group_name   = "dev_security_group"
+  sec_group_vpc_id = module.dev_vpc.vpc_id
 }
 
-#Create subnet
+# Create subnet
 
-module "poc_subnet" {
-  source     = "../../modules/subnet"
+module "dev_subnet" {
+  source     = "../modules/subnet"
   cidr_block = local.cidr_block
-  vpc_id     = module.poc_vpc.vpc_id
+  vpc_id     = module.dev_vpc.vpc_id
 }
 
-#Create the primary and standby servers
 
-module "db1" {
-  source          = "../../modules/vm"
+
+
+# Code that creates master and node
+
+module "master" {
+  source          = "../modules/vm"
   instance_type   = "t2.micro"
   ami_name        = "ami-192a9460"
-  vpc_security_group_ids = [module.poc_sec_group.sec_group_id]
-  subnet_id       = module.poc_subnet.subnet_id
+  vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
+  subnet_id       = module.dev_subnet.subnet_id
 }
 
-module "db2" {
-  source          = "../../modules/vm"
+module "node_1" {
+  source          = "../modules/vm"
   instance_type   = "t2.micro"
   ami_name        = "ami-192a9460"
-  vpc_security_group_ids = [module.poc_sec_group.sec_group_id]
-  subnet_id       = module.poc_subnet.subnet_id
+  vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
+  subnet_id       = module.dev_subnet.subnet_id
 }
 
+module "node_2" {
+  source          = "../modules/vm"
+  instance_type   = "t2.micro"
+  ami_name        = "ami-192a9460"
+  vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
+  subnet_id       = module.dev_subnet.subnet_id
+}
+
+/*
 #Add an elastic IP to the vms
 resource "aws_eip" "db1" {
   instance = module.db1.vm_id
@@ -58,6 +70,8 @@ resource "aws_eip" "db2" {
   vpc      = true
 }
 
+*/
+/*
 #Set up an internet gateway to route to your VPC
 resource "aws_internet_gateway" "poc_gateway" {
   vpc_id = module.poc_vpc.vpc_id
@@ -98,4 +112,4 @@ resource "local_file" "ansible_conf" {
   filename = "../../../ansible/hosts"
 }
 
-
+*/
