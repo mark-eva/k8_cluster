@@ -58,6 +58,13 @@ module "node_2" {
   subnet_id       = module.dev_subnet.subnet_id
 }
 
+# Deploy public key to the newly created vms
+
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = file("/mnt/c/Main/08_keys/public_key.pub")
+}
+
 /*
 #Add an elastic IP to the vms
 resource "aws_eip" "db1" {

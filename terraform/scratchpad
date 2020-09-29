@@ -1,6 +1,5 @@
-1. Fix the following error:
 
-Error: Error launching source instance: InvalidKeyPair.NotFound: The key pair 'deployer-key' does not exist
-        status code: 400, request id: dadd0567-ef1b-4448-8e2d-68f1604ec0eb
-
+1. Temporarily give public IP to each newly created VM for access
+    - Add an ouput of public ip for newly created VMs
 2. Research the best aws archivecture with regards to K8 and build terraform form code against that
+3. Research about best naming convention for your terraform code
