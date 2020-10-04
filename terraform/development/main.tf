@@ -110,16 +110,17 @@ resource "aws_route_table_association" "dev_subnet_to_routetable" {
 }
 
 
-/*
+
 # generate inventory file for Ansible
 resource "local_file" "ansible_conf" {
-  content = templatefile("../../../ansible/templates/hosts.tpl",
+  content = templatefile("../../ansible/templates/hosts.tpl",
     {
-      db1_public_ip = aws_eip.db1.public_ip
-      db2_public_ip = aws_eip.db2.public_ip
+      master = aws_eip.master.public_ip
+      worker_1 = aws_eip.node_1.public_ip
+      worker_2 = aws_eip.node_2.public_ip
     }
   )
-  filename = "../../../ansible/hosts"
+  filename = "../../ansible/hosts"
 }
 
-*/
+

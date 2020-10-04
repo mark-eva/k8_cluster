@@ -1,9 +1,11 @@
-[dbservers]
-${db1_public_ip}
-${db2_public_ip}
+[all_nodes]
+${master}
+${worker_1}
+${worker_2}
 
 [master]
-${db1_public_ip}
+${master}
 
-[slave]
-${db2_public_ip}
+[workers]
+${worker_1}
+${worker_2}
