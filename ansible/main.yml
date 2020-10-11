@@ -1,6 +1,9 @@
-- hosts: master
+---
+- hosts: all_nodes
   become: true
-  
-  roles:
-    - role: install_postgresql12
+
+  roles: 
+    - role: install_docker
+
+
       

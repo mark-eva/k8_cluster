@@ -120,7 +120,7 @@ resource "local_file" "ansible_conf" {
       worker_2 = aws_eip.node_2.public_ip
     }
   )
-  filename = "../../ansible/hosts"
+  filename = "../../ansible/development"
 }
 
 

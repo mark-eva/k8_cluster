@@ -1,5 +1,4 @@
 
-1. Temporarily give public IP to each newly created VM for access
-    - Add an ouput of public ip for newly created VMs
+1. Install k8 on all nodes using ansible 
 2. Research the best aws archivecture with regards to K8 and build terraform form code against that
 3. Research about best naming convention for your terraform code

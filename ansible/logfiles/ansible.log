@@ -1,0 +1,549 @@
+2020-10-04 09:48:53,338 p=902 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with script
+plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml --list ([Errno 8]
+Exec format error)
+
+2020-10-04 09:48:53,341 p=902 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with auto
+plugin: no root 'plugin' key found, '/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml' is
+not a valid YAML inventory plugin config file
+
+2020-10-04 09:48:53,344 p=902 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with yaml
+plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-04 09:48:53,346 p=902 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with ini
+plugin: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml:1: Expected key=value host variable
+assignment, got: hosts:
+
+2020-10-04 09:48:53,347 p=902 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml as an inventory
+source
+
+2020-10-04 09:48:53,349 p=902 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles as an inventory
+source
+
+2020-10-04 09:48:56,931 p=902 u=root n=ansible | ${worker_1} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_1}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:48:56,935 p=902 u=root n=ansible | ${master} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${master}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:48:57,058 p=902 u=root n=ansible | ${worker_2} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_2}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:49:02,845 p=902 u=root n=ansible | 34.246.237.115 | CHANGED | rc=0 >>
+ 08:49:02 up 1 min,  1 user,  load average: 0.30, 0.11, 0.04
+
+2020-10-04 09:49:02,849 p=902 u=root n=ansible | 54.74.253.195 | CHANGED | rc=0 >>
+ 08:49:02 up 1 min,  1 user,  load average: 0.24, 0.14, 0.05
+
+2020-10-04 09:49:02,857 p=902 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:49:02 up 1 min,  1 user,  load average: 0.11, 0.08, 0.04
+
+2020-10-04 09:50:14,027 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log
+with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log --list ([Errno 8] Exec format
+error)
+
+2020-10-04 09:50:14,029 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log
+with ini plugin: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log:1: Expected
+key=value host variable assignment, got: 09:48:53,338
+
+2020-10-04 09:50:14,029 p=971 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log as
+an inventory source
+
+2020-10-04 09:50:14,030 p=971 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles as an inventory
+source
+
+2020-10-04 09:50:14,050 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with script
+plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml --list ([Errno 8]
+Exec format error)
+
+2020-10-04 09:50:14,051 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with auto
+plugin: no root 'plugin' key found, '/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml' is
+not a valid YAML inventory plugin config file
+
+2020-10-04 09:50:14,052 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with yaml
+plugin: Parsed empty YAML file
+
+2020-10-04 09:50:14,053 p=971 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with ini
+plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML file.
+
+2020-10-04 09:50:14,053 p=971 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml as an inventory
+source
+
+2020-10-04 09:50:14,054 p=971 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles as an inventory
+source
+
+2020-10-04 09:50:14,865 p=971 u=root n=ansible | ${master} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${master}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:50:14,873 p=971 u=root n=ansible | ${worker_1} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_1}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:50:14,986 p=971 u=root n=ansible | ${worker_2} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_2}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:50:17,246 p=971 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:50:16 up 3 min,  1 user,  load average: 0.03, 0.07, 0.04
+
+2020-10-04 09:50:17,252 p=971 u=root n=ansible | 54.74.253.195 | CHANGED | rc=0 >>
+ 08:50:16 up 2 min,  1 user,  load average: 0.07, 0.11, 0.05
+
+2020-10-04 09:50:17,635 p=971 u=root n=ansible | 34.246.237.115 | CHANGED | rc=0 >>
+ 08:50:17 up 3 min,  1 user,  load average: 0.09, 0.09, 0.04
+
+2020-10-04 09:51:40,547 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log with script plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log
+--list ([Errno 8] Exec format error)
+
+2020-10-04 09:51:40,548 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log with ini plugin: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log:1: Expected
+key=value host variable assignment, got: 09:48:53,338
+
+2020-10-04 09:51:40,549 p=1042 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log as an inventory source
+
+2020-10-04 09:51:40,550 p=1042 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles as an inventory source
+
+2020-10-04 09:51:40,569 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with script plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml --list ([Errno 8] Exec
+format error)
+
+2020-10-04 09:51:40,570 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with auto plugin: no root 'plugin' key found, '/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml' is not a
+valid YAML inventory plugin config file
+
+2020-10-04 09:51:40,571 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with yaml plugin: Parsed empty YAML file
+
+2020-10-04 09:51:40,571 p=1042 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML file.
+
+2020-10-04 09:51:40,572 p=1042 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml as an inventory source
+
+2020-10-04 09:51:40,573 p=1042 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles as an inventory source
+
+2020-10-04 09:51:41,151 p=1042 u=root n=ansible | ${master} | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${master}: Name or service not known", 
+    "unreachable": true
+}
+2020-10-04 09:51:43,138 p=1042 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:51:42 up 4 min,  1 user,  load average: 0.01, 0.05, 0.04
+
+2020-10-04 09:52:01,232 p=1072 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:52:00 up 4 min,  1 user,  load average: 0.01, 0.04, 0.04
+
+2020-10-04 09:52:10,141 p=1093 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:52:09 up 4 min,  1 user,  load average: 0.00, 0.04, 0.04
+
+2020-10-04 09:52:21,976 p=1113 u=root n=ansible | 54.217.184.46 | CHANGED | rc=0 >>
+ 08:52:21 up 5 min,  1 user,  load average: 0.00, 0.04, 0.04
+
+2020-10-04 09:52:22,027 p=1113 u=root n=ansible | 34.246.237.115 | CHANGED | rc=0 >>
+ 08:52:21 up 5 min,  1 user,  load average: 0.01, 0.06, 0.04
+
+2020-10-04 09:52:22,045 p=1113 u=root n=ansible | 54.74.253.195 | CHANGED | rc=0 >>
+ 08:52:21 up 4 min,  1 user,  load average: 0.01, 0.07, 0.05
+
+2020-10-11 09:28:14,466 p=405 u=root n=ansible | - downloading role 'docker', owned by geerlingguy
+2020-10-11 09:28:15,409 p=405 u=root n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-docker/archive/2.9.0.tar.gz
+2020-10-11 09:28:15,968 p=405 u=root n=ansible | - extracting geerlingguy.docker to /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/geerlingguy.docker
+2020-10-11 09:28:16,145 p=405 u=root n=ansible | - geerlingguy.docker (2.9.0) was installed successfully
+2020-10-11 09:55:20,844 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log with script plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log
+--list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:20,846 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log with ini plugin: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log:1: Expected
+key=value host variable assignment, got: 09:48:53,338
+
+2020-10-11 09:55:20,847 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles/ansible.log as an inventory source
+
+2020-10-11 09:55:20,848 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/logfiles as an inventory source
+
+2020-10-11 09:55:20,875 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with script plugin: problem running /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml --list ([Errno 8] Exec
+format error)
+
+2020-10-11 09:55:20,877 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with auto plugin: no root 'plugin' key found, '/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml' is not a
+valid YAML inventory plugin config file
+
+2020-10-11 09:55:20,886 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:20,888 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML file.
+
+2020-10-11 09:55:20,889 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/main.yml as an inventory source
+
+2020-10-11 09:55:20,913 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:20,916 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE with yaml plugin: We were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No
+JSON object could be decoded  Syntax Error while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE':
+line 10, column 36, but may be elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:  the Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+conditions:                                    ^ here
+
+2020-10-11 09:55:20,918 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE with ini plugin: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE:1:
+Expected key=value host variable assignment, got: MIT
+
+2020-10-11 09:55:20,919 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/LICENSE as an inventory source
+
+2020-10-11 09:55:20,947 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_apt_release_channel' as this is not a valid group definition
+
+2020-10-11 09:55:20,948 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_apt_arch' as this is not a valid group definition
+
+2020-10-11 09:55:20,949 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_package_state' as this is not a valid group definition
+
+2020-10-11 09:55:20,950 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_apt_repository' as this is not a valid group definition
+
+2020-10-11 09:55:20,951 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_apt_ignore_key_error' as this is not a valid group definition
+
+2020-10-11 09:55:20,952 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_apt_gpg_key' as this is not a valid group definition
+
+2020-10-11 09:55:20,954 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_install_compose' as this is not a valid group definition
+
+2020-10-11 09:55:20,955 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_service_state' as this is not a valid group definition
+
+2020-10-11 09:55:20,956 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_yum_repo_enable_edge' as this is not a valid group definition
+
+2020-10-11 09:55:20,959 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_edition' as this is not a valid group definition
+
+2020-10-11 09:55:20,960 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_yum_gpg_key' as this is not a valid group definition
+
+2020-10-11 09:55:20,966 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_yum_repo_enable_test' as this is not a valid group definition
+
+2020-10-11 09:55:20,966 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_service_enabled' as this is not a valid group definition
+
+2020-10-11 09:55:20,967 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_users' as this is not a valid group definition
+
+2020-10-11 09:55:20,968 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_compose_path' as this is not a valid group definition
+
+2020-10-11 09:55:20,969 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_yum_repo_url' as this is not a valid group definition
+
+2020-10-11 09:55:20,971 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_compose_version' as this is not a valid group definition
+
+2020-10-11 09:55:20,973 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_package' as this is not a valid group definition
+
+2020-10-11 09:55:20,974 p=452 u=root n=ansible | [WARNING]: Skipping 'docker_restart_handler_state' as this is not a valid group definition
+
+2020-10-11 09:55:21,000 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,010 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,018 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,020 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML file.
+
+2020-10-11 09:55:21,021 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers/main.yml as an inventory source
+
+2020-10-11 09:55:21,022 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/handlers as an inventory source
+
+2020-10-11 09:55:21,061 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,063 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,065 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,067 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML
+file.
+
+2020-10-11 09:55:21,068 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml as an inventory source
+
+2020-10-11 09:55:21,101 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,103 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,105 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,107 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML
+file.
+
+2020-10-11 09:55:21,108 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-users.yml as an inventory source
+
+2020-10-11 09:55:21,143 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,146 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,147 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,149 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML file.
+
+2020-10-11 09:55:21,150 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/main.yml as an inventory source
+
+2020-10-11 09:55:21,190 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,192 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,194 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,196 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML
+file.
+
+2020-10-11 09:55:21,197 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-Debian.yml as an inventory source
+
+2020-10-11 09:55:21,238 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml with script plugin: problem running
+/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml --list ([Errno 8] Exec format error)
+
+2020-10-11 09:55:21,240 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml with auto plugin: no root 'plugin' key found,
+'/mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml' is not a valid YAML inventory plugin config file
+
+2020-10-11 09:55:21,242 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+2020-10-11 09:55:21,244 p=452 u=root n=ansible | [WARNING]:  * Failed to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml with ini plugin: Invalid host pattern '---' supplied, '---' is normally a sign this is a YAML
+file.
+
+2020-10-11 09:55:21,246 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml as an inventory source
+
+2020-10-11 09:55:21,247 p=452 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks as an inventory source
+
+2020-10-11 09:55:24,892 p=452 u=root n=ansible | PLAY [all_nodes] ****************************************************************************************************************************************************************************************************************************
+2020-10-11 09:55:25,255 p=452 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2020-10-11 09:55:25,466 p=452 u=root n=ansible | fatal: [${master}]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${master}: Name or service not known", "unreachable": true}
+2020-10-11 09:55:25,468 p=452 u=root n=ansible | fatal: [${worker_1}]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_1}: Name or service not known", "unreachable": true}
+2020-10-11 09:55:25,543 p=452 u=root n=ansible | fatal: [${worker_2}]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ${worker_2}: Name or service not known", "unreachable": true}
+2020-10-11 09:55:32,105 p=452 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:55:32,108 p=452 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:55:32,182 p=452 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:55:32,203 p=452 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:55:32,875 p=452 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml for 54.217.184.46, 34.246.237.115, 54.74.253.195
+2020-10-11 09:55:32,914 p=452 u=root n=ansible | TASK [install_docker : Ensure old versions of Docker are not installed.] ********************************************************************************************************************************************************************
+2020-10-11 09:55:34,741 p=452 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:55:34,802 p=452 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:55:34,827 p=452 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:55:34,844 p=452 u=root n=ansible | TASK [install_docker : Add Docker GPG key.] *************************************************************************************************************************************************************************************************
+2020-10-11 09:55:36,568 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:55:36,579 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:55:36,665 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:55:36,681 p=452 u=root n=ansible | TASK [install_docker : Add Docker repository.] **********************************************************************************************************************************************************************************************
+2020-10-11 09:55:38,113 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:55:38,130 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:55:38,168 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:55:38,184 p=452 u=root n=ansible | TASK [install_docker : Configure Docker Edge repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 09:55:39,472 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:55:39,908 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:55:39,979 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:55:39,994 p=452 u=root n=ansible | TASK [install_docker : Configure Docker Test repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 09:55:40,966 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:55:40,986 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:55:41,030 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:55:41,048 p=452 u=root n=ansible | TASK [install_docker : Ensure container-selinux is installed.] ******************************************************************************************************************************************************************************
+2020-10-11 09:55:41,146 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:55:41,169 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:55:41,208 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:55:41,253 p=452 u=root n=ansible | TASK [install_docker : Disable container-tools module.] *************************************************************************************************************************************************************************************
+2020-10-11 09:55:41,397 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:55:41,410 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:55:41,458 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:55:41,480 p=452 u=root n=ansible | TASK [install_docker : Ensure containerd.io is installed.] **********************************************************************************************************************************************************************************
+2020-10-11 09:55:41,589 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:55:41,612 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:55:41,647 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:55:41,662 p=452 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:55:41,749 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:55:41,776 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:55:41,814 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:55:41,828 p=452 u=root n=ansible | TASK [install_docker : Install Docker.] *****************************************************************************************************************************************************************************************************
+2020-10-11 09:56:37,137 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:56:37,646 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:56:37,729 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:56:37,885 p=452 u=root n=ansible | TASK [install_docker : Ensure Docker is started and enabled at boot.] ***********************************************************************************************************************************************************************
+2020-10-11 09:56:40,378 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:56:40,482 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:56:40,660 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:56:40,663 p=452 u=root n=ansible | RUNNING HANDLER [install_docker : restart docker] *******************************************************************************************************************************************************************************************
+2020-10-11 09:56:42,126 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:56:42,220 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:56:42,247 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:56:42,264 p=452 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:56:42,475 p=452 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml for 54.217.184.46, 34.246.237.115, 54.74.253.195
+2020-10-11 09:56:42,500 p=452 u=root n=ansible | TASK [install_docker : Check current docker-compose version.] *******************************************************************************************************************************************************************************
+2020-10-11 09:56:43,785 p=452 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:56:43,811 p=452 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:56:43,847 p=452 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:56:43,864 p=452 u=root n=ansible | TASK [install_docker : Delete existing docker-compose version if it's different.] ***********************************************************************************************************************************************************
+2020-10-11 09:56:44,000 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:56:44,026 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:56:44,049 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:56:44,082 p=452 u=root n=ansible | TASK [install_docker : Install Docker Compose (if configured).] *****************************************************************************************************************************************************************************
+2020-10-11 09:56:46,869 p=452 u=root n=ansible | changed: [54.217.184.46]
+2020-10-11 09:56:47,284 p=452 u=root n=ansible | changed: [54.74.253.195]
+2020-10-11 09:56:47,338 p=452 u=root n=ansible | changed: [34.246.237.115]
+2020-10-11 09:56:47,353 p=452 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:56:47,450 p=452 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:56:47,479 p=452 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:56:47,500 p=452 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:56:47,509 p=452 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2020-10-11 09:56:47,510 p=452 u=root n=ansible | ${master}                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-10-11 09:56:47,516 p=452 u=root n=ansible | ${worker_1}                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-10-11 09:56:47,517 p=452 u=root n=ansible | ${worker_2}                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-10-11 09:56:47,518 p=452 u=root n=ansible | 34.246.237.115             : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 09:56:47,519 p=452 u=root n=ansible | 54.217.184.46              : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 09:56:47,520 p=452 u=root n=ansible | 54.74.253.195              : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 09:57:47,287 p=851 u=root n=ansible | PLAY [all_nodes] ****************************************************************************************************************************************************************************************************************************
+2020-10-11 09:57:47,322 p=851 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2020-10-11 09:57:50,638 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:50,643 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:50,719 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:50,734 p=851 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:57:51,179 p=851 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml for 54.217.184.46, 34.246.237.115, 54.74.253.195
+2020-10-11 09:57:51,197 p=851 u=root n=ansible | TASK [install_docker : Ensure old versions of Docker are not installed.] ********************************************************************************************************************************************************************
+2020-10-11 09:57:52,751 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:52,829 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:52,880 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:52,896 p=851 u=root n=ansible | TASK [install_docker : Add Docker GPG key.] *************************************************************************************************************************************************************************************************
+2020-10-11 09:57:54,363 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:54,403 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:54,698 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:54,713 p=851 u=root n=ansible | TASK [install_docker : Add Docker repository.] **********************************************************************************************************************************************************************************************
+2020-10-11 09:57:56,100 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:56,119 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:56,176 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:56,189 p=851 u=root n=ansible | TASK [install_docker : Configure Docker Edge repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 09:57:57,580 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:58,005 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:58,006 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:58,023 p=851 u=root n=ansible | TASK [install_docker : Configure Docker Test repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 09:57:58,976 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:57:59,003 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:57:59,037 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:57:59,052 p=851 u=root n=ansible | TASK [install_docker : Ensure container-selinux is installed.] ******************************************************************************************************************************************************************************
+2020-10-11 09:57:59,138 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:57:59,177 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:57:59,199 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:57:59,214 p=851 u=root n=ansible | TASK [install_docker : Disable container-tools module.] *************************************************************************************************************************************************************************************
+2020-10-11 09:57:59,307 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:57:59,324 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:57:59,363 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:57:59,380 p=851 u=root n=ansible | TASK [install_docker : Ensure containerd.io is installed.] **********************************************************************************************************************************************************************************
+2020-10-11 09:57:59,472 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:57:59,522 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:57:59,551 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:57:59,572 p=851 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:57:59,686 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:57:59,703 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:57:59,741 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:57:59,755 p=851 u=root n=ansible | TASK [install_docker : Install Docker.] *****************************************************************************************************************************************************************************************************
+2020-10-11 09:58:00,965 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:58:00,981 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:58:01,163 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:58:01,177 p=851 u=root n=ansible | TASK [install_docker : Ensure Docker is started and enabled at boot.] ***********************************************************************************************************************************************************************
+2020-10-11 09:58:03,070 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:58:03,324 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:58:03,342 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:58:03,361 p=851 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:58:03,578 p=851 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml for 54.217.184.46, 34.246.237.115, 54.74.253.195
+2020-10-11 09:58:03,629 p=851 u=root n=ansible | TASK [install_docker : Check current docker-compose version.] *******************************************************************************************************************************************************************************
+2020-10-11 09:58:04,836 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:58:05,171 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:58:05,308 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:58:05,326 p=851 u=root n=ansible | TASK [install_docker : Delete existing docker-compose version if it's different.] ***********************************************************************************************************************************************************
+2020-10-11 09:58:05,417 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:58:05,444 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:58:05,476 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:58:05,492 p=851 u=root n=ansible | TASK [install_docker : Install Docker Compose (if configured).] *****************************************************************************************************************************************************************************
+2020-10-11 09:58:07,037 p=851 u=root n=ansible | ok: [54.74.253.195]
+2020-10-11 09:58:07,053 p=851 u=root n=ansible | ok: [54.217.184.46]
+2020-10-11 09:58:07,072 p=851 u=root n=ansible | ok: [34.246.237.115]
+2020-10-11 09:58:07,093 p=851 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 09:58:07,187 p=851 u=root n=ansible | skipping: [54.217.184.46]
+2020-10-11 09:58:07,216 p=851 u=root n=ansible | skipping: [34.246.237.115]
+2020-10-11 09:58:07,254 p=851 u=root n=ansible | skipping: [54.74.253.195]
+2020-10-11 09:58:07,258 p=851 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2020-10-11 09:58:07,259 p=851 u=root n=ansible | 34.246.237.115             : ok=12   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 09:58:07,260 p=851 u=root n=ansible | 54.217.184.46              : ok=12   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 09:58:07,261 p=851 u=root n=ansible | 54.74.253.195              : ok=12   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 10:26:30,834 p=1693 u=root n=ansible | PLAY [all_nodes] ****************************************************************************************************************************************************************************************************************************
+2020-10-11 10:26:30,880 p=1693 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2020-10-11 10:26:34,811 p=1693 u=root n=ansible | ok: [46.137.44.140]
+2020-10-11 10:26:35,016 p=1693 u=root n=ansible | ok: [54.74.27.215]
+2020-10-11 10:26:35,034 p=1693 u=root n=ansible | ok: [54.78.187.138]
+2020-10-11 10:26:35,052 p=1693 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 10:26:35,528 p=1693 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/setup-RedHat.yml for 54.78.187.138, 54.74.27.215, 46.137.44.140
+2020-10-11 10:26:35,547 p=1693 u=root n=ansible | TASK [install_docker : Ensure old versions of Docker are not installed.] ********************************************************************************************************************************************************************
+2020-10-11 10:26:37,364 p=1693 u=root n=ansible | ok: [54.78.187.138]
+2020-10-11 10:26:37,674 p=1693 u=root n=ansible | ok: [46.137.44.140]
+2020-10-11 10:26:39,808 p=1693 u=root n=ansible | ok: [54.74.27.215]
+2020-10-11 10:26:39,822 p=1693 u=root n=ansible | TASK [install_docker : Add Docker GPG key.] *************************************************************************************************************************************************************************************************
+2020-10-11 10:26:41,322 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:26:41,336 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:26:41,902 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:26:41,918 p=1693 u=root n=ansible | TASK [install_docker : Add Docker repository.] **********************************************************************************************************************************************************************************************
+2020-10-11 10:26:43,420 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:26:43,428 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:26:43,755 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:26:43,774 p=1693 u=root n=ansible | TASK [install_docker : Configure Docker Edge repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 10:26:45,092 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:26:45,108 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:26:45,548 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:26:45,564 p=1693 u=root n=ansible | TASK [install_docker : Configure Docker Test repo.] *****************************************************************************************************************************************************************************************
+2020-10-11 10:26:46,525 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:26:46,573 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:26:46,609 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:26:46,629 p=1693 u=root n=ansible | TASK [install_docker : Ensure container-selinux is installed.] ******************************************************************************************************************************************************************************
+2020-10-11 10:26:46,727 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:26:46,764 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:26:46,788 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:26:46,811 p=1693 u=root n=ansible | TASK [install_docker : Disable container-tools module.] *************************************************************************************************************************************************************************************
+2020-10-11 10:26:46,909 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:26:46,931 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:26:46,969 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:26:46,984 p=1693 u=root n=ansible | TASK [install_docker : Ensure containerd.io is installed.] **********************************************************************************************************************************************************************************
+2020-10-11 10:26:47,080 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:26:47,108 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:26:47,144 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:26:47,159 p=1693 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 10:26:47,286 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:26:47,318 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:26:47,344 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:26:47,363 p=1693 u=root n=ansible | TASK [install_docker : Install Docker.] *****************************************************************************************************************************************************************************************************
+2020-10-11 10:27:42,568 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:27:43,503 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:27:47,809 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:27:47,825 p=1693 u=root n=ansible | TASK [install_docker : Ensure Docker is started and enabled at boot.] ***********************************************************************************************************************************************************************
+2020-10-11 10:27:50,199 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:27:50,455 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:27:50,572 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:27:50,575 p=1693 u=root n=ansible | RUNNING HANDLER [install_docker : restart docker] *******************************************************************************************************************************************************************************************
+2020-10-11 10:27:52,082 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:27:52,142 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:27:52,758 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:27:52,793 p=1693 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 10:27:53,031 p=1693 u=root n=ansible | included: /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/roles/install_docker/tasks/docker-compose.yml for 54.78.187.138, 54.74.27.215, 46.137.44.140
+2020-10-11 10:27:53,059 p=1693 u=root n=ansible | TASK [install_docker : Check current docker-compose version.] *******************************************************************************************************************************************************************************
+2020-10-11 10:27:54,276 p=1693 u=root n=ansible | ok: [46.137.44.140]
+2020-10-11 10:27:54,284 p=1693 u=root n=ansible | ok: [54.78.187.138]
+2020-10-11 10:27:54,647 p=1693 u=root n=ansible | ok: [54.74.27.215]
+2020-10-11 10:27:54,661 p=1693 u=root n=ansible | TASK [install_docker : Delete existing docker-compose version if it's different.] ***********************************************************************************************************************************************************
+2020-10-11 10:27:54,753 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:27:54,778 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:27:54,812 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:27:54,827 p=1693 u=root n=ansible | TASK [install_docker : Install Docker Compose (if configured).] *****************************************************************************************************************************************************************************
+2020-10-11 10:27:57,932 p=1693 u=root n=ansible | changed: [54.78.187.138]
+2020-10-11 10:27:58,104 p=1693 u=root n=ansible | changed: [54.74.27.215]
+2020-10-11 10:27:58,134 p=1693 u=root n=ansible | changed: [46.137.44.140]
+2020-10-11 10:27:58,152 p=1693 u=root n=ansible | TASK [install_docker : include_tasks] *******************************************************************************************************************************************************************************************************
+2020-10-11 10:27:58,245 p=1693 u=root n=ansible | skipping: [54.78.187.138]
+2020-10-11 10:27:58,292 p=1693 u=root n=ansible | skipping: [54.74.27.215]
+2020-10-11 10:27:58,312 p=1693 u=root n=ansible | skipping: [46.137.44.140]
+2020-10-11 10:27:58,320 p=1693 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2020-10-11 10:27:58,320 p=1693 u=root n=ansible | 46.137.44.140              : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 10:27:58,321 p=1693 u=root n=ansible | 54.74.27.215               : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2020-10-11 10:27:58,322 p=1693 u=root n=ansible | 54.78.187.138              : ok=13   changed=8    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
