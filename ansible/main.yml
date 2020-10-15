@@ -3,7 +3,9 @@
   become: true
 
   roles: 
-    - role: install_docker
+    - install_docker
+    - install_kubernetes
+    - configure_kubernetes
 
 
       

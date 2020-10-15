@@ -1,0 +1,32 @@
+---
+- name: Add K8s YUM repository
+  yum_repository:
+    name: kubernetes
+    description: Kubernetes repository.
+    baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+    gpgcheck: true
+    repo_gpgcheck: true
+    gpgkey:
+      - https://packages.cloud.google.com/yum/doc/yum-key.gpg
+      - https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+    state: present
+  become: true
+
+- name: Install K8s and dependencies
+  yum:
+    name:
+      - kubeadm
+    state: present
+  become: true
+
+- name: Add centos user to docker group
+  user:
+    name: centos
+    groups: docker
+    append: true
+  become: true
+
+- name: Disable SELinux
+  selinux:
+    state: disabled
+  become: true

@@ -1,0 +1,42 @@
+---
+- name: Add K8s GPG Key
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+  become: true
+
+- name: Add K8s APT repository
+  apt_repository:
+    repo: "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+    state: present
+    filename: kubernetes-xenial
+    update_cache: yes
+  become: true
+
+- name: Install K8s and dependencies
+  apt:
+    name:
+      - kubeadm
+    state: present
+  become: true
+
+- name: Configure Docker Daemon for K8s
+  copy:
+    dest: /etc/docker/daemon.json
+    content: |
+      {
+        "exec-opts": ["native.cgroupdriver=systemd"],
+        "log-driver": "json-file",
+        "log-opts": {
+          "max-size": "100m"
+        },
+        "storage-driver": "overlay2"
+      }
+  become: true
+
+- name: Add ubuntu user to docker group
+  user:
+    name: ubuntu
+    groups: docker
+    append: true
+  become: true

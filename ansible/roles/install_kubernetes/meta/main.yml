@@ -1,0 +1,23 @@
+galaxy_info:
+  role_name: kubernetes_install
+  author: Lumina Networks
+  description: Install Kubernetes.
+  company: Lumina Networks
+  issue_tracker_url: https://github.com/lumina-networks-oss/ansible-roles-kubernetes-install/issues
+  license: MIT
+
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Ubuntu
+      versions:
+        - bionic
+
+  galaxy_tags:
+    - system
+    - tools
+
+dependencies: []

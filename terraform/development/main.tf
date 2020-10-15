@@ -36,7 +36,7 @@ module "dev_subnet" {
 
 module "master" {
   source          = "../modules/vm"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   ami_name        = "ami-192a9460"
   vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
   subnet_id       = module.dev_subnet.subnet_id
@@ -44,7 +44,7 @@ module "master" {
 
 module "node_1" {
   source          = "../modules/vm"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   ami_name        = "ami-192a9460"
   vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
   subnet_id       = module.dev_subnet.subnet_id
@@ -52,7 +52,7 @@ module "node_1" {
 
 module "node_2" {
   source          = "../modules/vm"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   ami_name        = "ami-192a9460"
   vpc_security_group_ids = [module.dev_sec_group.sec_group_id]
   subnet_id       = module.dev_subnet.subnet_id
