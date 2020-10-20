@@ -12,3 +12,16 @@ Configure kubernetes cluster
 
 
 
+# create a playbook that adds nodes into the k8 cluster
+
+After initiation period:
+    - capture the syntax required for the node addition
+    - use this syntax and apply it in all  worker nodes within the cluster
+
+Scaling up
+    - Check the output of token list to see if its still valid
+        not:
+            - generate a new syntax for adding a new node
+        valid:
+            - generate a syntax utilising the existing details
+

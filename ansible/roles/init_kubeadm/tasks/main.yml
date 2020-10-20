@@ -1,0 +1,27 @@
+---
+# initialiases the master node for kubernetes
+- name: initialize the cluster
+  shell: kubeadm init --pod-network-cidr=192.168.0.0/16 
+  register: result 
+
+- name: Copy join command to local file
+  local_action: copy content={{ result.stdout }} dest="./join-command"
+
+- debug: 
+    var: result
+
+- name: create kubeadm config folder 
+  file:
+    path: /root/.kube
+    state: directory
+
+- name: copy kubernestes config
+  shell: cp -i /etc/kubernetes/admin.conf /root/.kube/config
+
+- name: apply calico yml file
+  shell: kubectl apply -f https://docs.projectcalico.org/v3.11/manifests/calico.yaml
+   
+  
+
+
+  

@@ -1,0 +1,8 @@
+- hosts: master
+  become: true
+
+  roles: 
+    #- install_docker
+    #- install_kubernetes
+    #- configure_kubernetes
+    - init_kubeadm
