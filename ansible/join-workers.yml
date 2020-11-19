@@ -1,0 +1,33 @@
+---
+- hosts: workers
+  become: true
+
+  tasks:
+    - name: store the the join command in a variable
+      shell: cat join-command | grep -i -A 1 "6443 --token" | sed 's/\\/ /g' | xargs -n2 -d'\n'
+      args:
+        executable: /bin/bash
+      register: join_command
+      delegate_to: 127.0.0.1
+      
+
+    - debug: 
+        var: join_command.stdout
+
+    - set_fact:
+        join_command: "{{ join_command.stdout }}"
+
+    
+    - name: Execute join command to all worker nodes
+      shell: "{{ join_command }}"
+      register: shell_output
+      args:
+        executable: /bin/bash
+
+ 
+
+    
+
+    
+
+    
