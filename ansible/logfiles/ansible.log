@@ -5506,3 +5506,22 @@ does not change.
 2020-11-19 11:33:56,480 p=7928 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
 2020-11-19 11:33:56,481 p=7928 u=root n=ansible | 54.73.61.124               : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2020-11-19 11:33:56,486 p=7928 u=root n=ansible | 54.78.4.1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-11-24 10:20:35,998 p=1287 u=root n=ansible | [WARNING]: Unable to parse /mnt/c/Users/marke/OneDrive/Documents/GitHub/k8_cluster/ansible/development as an inventory source
+
+2020-11-24 10:20:36,000 p=1287 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-11-24 10:20:36,002 p=1287 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-11-24 10:20:36,003 p=1287 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: all_nodes
+
+2020-11-24 10:20:38,985 p=1287 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2020-11-24 10:20:55,362 p=1294 u=root n=ansible | 54.73.205.56 | CHANGED | rc=0 >>
+ 10:20:54 up  1:31,  3 users,  load average: 0.10, 2.21, 2.32
+
+2020-11-24 10:22:29,896 p=1317 u=root n=ansible | 54.73.205.56 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2020-11-24 10:22:45,822 p=1340 u=root n=ansible | 54.73.205.56 | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host 54.73.205.56 port 22: Connection refused
+

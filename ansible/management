@@ -1,0 +1,13 @@
+[all_nodes]
+54.73.205.56
+54.77.94.117
+
+[cicd]
+54.73.205.56
+
+[windowsbuildagents]
+54.77.94.117
+
+
+[monitoring]
+
